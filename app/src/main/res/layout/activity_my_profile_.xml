@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".MyProfile_Activity">
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="189dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/profile"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/orderHistory"
+        android:layout_width="154dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/odHistory"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paddress" />
+
+    <Button
+        android:id="@+id/inviteBtn"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/inviteBtn"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateBtn" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="145dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/updateBtn"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderHistory" />
+
+    <EditText
+        android:id="@+id/Pname"
+        android:layout_width="286dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:hint="@string/PName"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        tools:ignore= "Autofill"/>
+
+    <EditText
+        android:id="@+id/pEmail"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:hint="@string/Pemail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pname"
+        tools:ignore= "Autofill"/>
+
+    <EditText
+        android:id="@+id/phnNum"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:hint="@string/PphNum"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pEmail"
+        tools:ignore= "Autofill"/>
+
+    <EditText
+        android:id="@+id/paddress"
+        android:layout_width="278dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:hint="@string/Paddress"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phnNum"
+        tools:ignore= "Autofill"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Meat_Activity">
+
+    <ImageView
+        android:id="@+id/chickenimg"
+        android:layout_width="124dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/chicken"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chicken" />
+
+    <ImageView
+        android:id="@+id/porkimg"
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/pork"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chickenimg"
+        app:srcCompat="@drawable/pork" />
+
+    <ImageView
+        android:id="@+id/salmonimg"
+        android:layout_width="124dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/salmon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/porkimg"
+        app:srcCompat="@drawable/salmon" />
+
+    <ImageView
+        android:id="@+id/baconimg"
+        android:layout_width="128dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/bacon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salmonimg"
+        app:srcCompat="@drawable/bacon" />
+
+    <ImageView
+        android:id="@+id/thighimg"
+        android:layout_width="119dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/thigh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baconimg"
+        app:srcCompat="@drawable/chickenthighs" />
+
+    <TextView
+        android:id="@+id/chicken"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
+        android:gravity="start"
+        android:text="@string/chicken"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/chickenimg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thigh"
+        android:layout_width="94dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="@string/thigh"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/thighimg"
+        app:layout_constraintTop_toBottomOf="@+id/baconprice" />
+
+    <TextView
+        android:id="@+id/bacon"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="@string/bacon"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/baconimg"
+        app:layout_constraintTop_toBottomOf="@+id/salmonPrice" />
+
+    <TextView
+        android:id="@+id/salmon"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:text="@string/salmon"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/salmonimg"
+        app:layout_constraintTop_toBottomOf="@+id/porkPrice" />
+
+    <TextView
+        android:id="@+id/pork"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:gravity="start"
+        android:text="@string/pork"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/porkimg"
+        app:layout_constraintTop_toBottomOf="@+id/chickenPrice" />
+
+    <TextView
+        android:id="@+id/chickenPrice"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/cheesePrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/chickenimg"
+        app:layout_constraintTop_toBottomOf="@+id/chicken" />
+
+    <TextView
+        android:id="@+id/thighPrice"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/thighPrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/thighimg"
+        app:layout_constraintTop_toBottomOf="@+id/thigh" />
+
+    <TextView
+        android:id="@+id/baconprice"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:text="@string/baconPrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/baconimg"
+        app:layout_constraintTop_toBottomOf="@+id/bacon" />
+
+    <TextView
+        android:id="@+id/salmonPrice"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/salmonPrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/salmonimg"
+        app:layout_constraintTop_toBottomOf="@+id/salmon" />
+
+    <TextView
+        android:id="@+id/porkPrice"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/porkPrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/porkimg"
+        app:layout_constraintTop_toBottomOf="@+id/pork" />
+
+    <EditText
+        android:id="@+id/chickenQty"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/chicken"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/thighQty"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/thigh"
+        app:layout_constraintTop_toBottomOf="@+id/baconQty"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/baconQty"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/bacon"
+        app:layout_constraintTop_toBottomOf="@+id/salmomQty"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/salmomQty"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/salmon"
+        app:layout_constraintTop_toBottomOf="@+id/porkQty"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/porkQty"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/pork"
+        app:layout_constraintTop_toBottomOf="@+id/chickenQty"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/meatAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="236dp"
+        android:layout_marginLeft="236dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/addToCart"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thighQty" />
+
+</android.support.constraint.ConstraintLayout>

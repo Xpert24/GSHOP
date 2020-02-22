@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vegetables_Activity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="107dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="104dp"
+        android:contentDescription="@string/bellpepper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bellpepper" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="107dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/broccoli"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/broccoli" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="107dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:contentDescription="@string/tomato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/tomato" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="106dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/zuchini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/zuchini" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="106dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/cucumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/cucumber" />
+
+    <TextView
+        android:id="@+id/bellpepper"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="92dp"
+        android:gravity="start"
+        android:text="@string/bellpepper"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cucumber"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="@string/cucumber"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/tomatoesPrice" />
+
+    <TextView
+        android:id="@+id/tomatoes"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:text="@string/tomato"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/broccoliPrice" />
+
+    <TextView
+        android:id="@+id/broccoli"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="@string/broccoli"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/zuchiniPrice" />
+
+    <TextView
+        android:id="@+id/zuchini"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:text="@string/zuchini"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/bellpepperPrice" />
+
+    <TextView
+        android:id="@+id/broccoliPrice"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:gravity="start"
+        android:text="@string/broccoliPrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/broccoli" />
+
+    <TextView
+        android:id="@+id/cucumberPrice"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:gravity="start"
+        android:text="@string/cucumberPrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/cucumber" />
+
+    <TextView
+        android:id="@+id/tomatoesPrice"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:gravity="start"
+        android:text="@string/tomatoPrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/tomatoes" />
+
+    <TextView
+        android:id="@+id/bellpepperPrice"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:gravity="start"
+        android:text="@string/bellpepperPrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/bellpepper" />
+
+    <TextView
+        android:id="@+id/zuchiniPrice"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:gravity="start"
+        android:text="@string/zuchiniPrice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/zuchini" />
+
+    <EditText
+        android:id="@+id/tomatoesQty"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="62dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tomatoes"
+        app:layout_constraintTop_toBottomOf="@+id/broccoliQty"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/cucumberQty"
+        android:layout_width="95dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/cucumber"
+        app:layout_constraintTop_toBottomOf="@+id/tomatoesQty"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/bellpeppperQty"
+        android:layout_width="95dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/bellpepper"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/broccoliQty"
+        android:layout_width="95dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/broccoli"
+        app:layout_constraintTop_toBottomOf="@+id/zuchiniQty"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/zuchiniQty"
+        android:layout_width="95dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/qty"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/zuchini"
+        app:layout_constraintTop_toBottomOf="@+id/bellpeppperQty"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/vegeAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="236dp"
+        android:layout_marginLeft="236dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/addToCart"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cucumberQty" />
+
+</android.support.constraint.ConstraintLayout>
